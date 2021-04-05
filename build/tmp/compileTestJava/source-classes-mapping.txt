@@ -1,0 +1,4 @@
+com/kukucorn/study/springboot/dto/HelloResponseDtoTest.java
+ com.kukucorn.study.springboot.dto.HelloResponseDtoTest
+com/kukucorn/study/springboot/HelloControllerTest.java
+ com.kukucorn.study.springboot.HelloControllerTest
