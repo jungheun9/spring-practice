@@ -1,8 +1,0 @@
-com/kukucorn/study/springboot/dto/HelloResponseDtoTest.java
- com.kukucorn.study.springboot.dto.HelloResponseDtoTest
-com/kukucorn/study/springboot/HelloControllerTest.java
- com.kukucorn.study.springboot.HelloControllerTest
-com/kukucorn/study/springboot/web/PostsApiControllerTest.java
- com.kukucorn.study.springboot.web.PostsApiControllerTest
-com/kukucorn/study/springboot/domain/posts/PostsRepositoryTest.java
- com.kukucorn.study.springboot.domain.posts.PostsRepositoryTest
