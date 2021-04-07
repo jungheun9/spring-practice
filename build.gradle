@@ -1,3 +1,5 @@
+// buildscript 에서 정의한 dependency 는 build.gradle 에서만 적용된다.
+// 그렇기에 필요한 plugin(외부에서 가져와야 하는) 이나 docker file 을 적용할 때 사용한다고 한다(docker 에 대해서는 정확히 어떤식인지 모르겠다.)
 buildscript {
     ext {
         springBootVersion = '2.1.7.RELEASE'
