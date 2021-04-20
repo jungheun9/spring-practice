@@ -1,5 +1,6 @@
 package com.kukucorn.study.springboot.web;
 
+import com.kukucorn.study.springboot.config.auth.LoginUser;
 import com.kukucorn.study.springboot.config.auth.dto.SessionUser;
 import com.kukucorn.study.springboot.service.posts.PostsService;
 import com.kukucorn.study.springboot.web.dto.PostsResponseDto;
@@ -19,9 +20,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsSevice.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if (user != null) {
             model.addAttribute("userName", user.getName());
         }
