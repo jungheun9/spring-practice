@@ -17,9 +17,13 @@ before_install: "chmod +x ./gradlew"
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r spring-practice *
-  - mkdir -p deploy
-  - mv spring-practice.zip deploy/spring-practice.zip
+  - mkdir -p before-deploy
+  - cp scripts/*.sh before-deploy/
+  - cp appspec.yml before-deploy/
+  - cp build/libs/*.jar before-deploy/
+  - cd before-deploy && zip -r before-deploy * # before-deploy 로 이동 후 전체 압축
+  - cd ../ && mkdir -p deploy
+  - mv before-deploy/before-deploy.zip deploy/spring-practice.zip # deploy로 zip파일 이동
 
 deploy:
   - provider: s3
