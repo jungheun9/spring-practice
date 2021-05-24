@@ -22,7 +22,7 @@ plugins {
 }
 
 group 'org.kuku.corn'
-version '1.0.1-SNAPSHOT'
+version '1.1.1-SNAPSHOT'
 
 // 라이브러리를 자동으로 다운 받기 위한 저장소를 지정한다.
 repositories {
@@ -38,6 +38,7 @@ dependencies {
     implementation 'org.springframework.session:spring-session-jdbc'
     implementation 'com.h2database:h2'
     implementation 'org.mariadb.jdbc:mariadb-java-client'
+    implementation 'junit:junit:4.13.1'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
