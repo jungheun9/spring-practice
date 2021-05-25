@@ -23,7 +23,7 @@ public class HelloControllerTest {
     @Test
     @WithMockUser(roles="USER")
     public void hello가_리턴된다() throws Exception {
-        String hello = "hello";
+        String hello = "hello world";
 
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
