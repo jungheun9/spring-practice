@@ -22,7 +22,7 @@ plugins {
 }
 
 group 'org.kuku.corn'
-version '1.1.1-SNAPSHOT'
+version '1.1.1-SNAPSHOT-' + new Date().format("yyyyMMddHHmmss")
 
 // 라이브러리를 자동으로 다운 받기 위한 저장소를 지정한다.
 repositories {
